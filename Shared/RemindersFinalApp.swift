@@ -14,6 +14,7 @@ struct RemindersApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
+                #if os(iOS)
                 NavigationView {ContentView(store: store)}
                 .tabItem {
                     Label("List", systemImage: "list.bullet.circle.fill")
@@ -22,6 +23,18 @@ struct RemindersApp: App {
                 .tabItem {
                     Label("Important", systemImage: "exclamationmark.circle.fill")
                 }
+                #else
+                ContentView(store: store)
+                    .frame(minWidth: 475, idealWidth: 525, maxWidth: 575, minHeight: 200, idealHeight: 300)
+                    .tabItem {
+                        Label("List", systemImage: "list.bullet.circle.fill")
+                    }
+                ImportantTaskView(store: store)
+                    .tabItem {
+                        Label("Important", systemImage: "exclamationmark.circle.fill")
+                    }
+                #endif
+             
             }
         }
         .onChange(of: scenePhase) { newPhase in
