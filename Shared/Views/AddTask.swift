@@ -40,6 +40,7 @@ struct AddTask: View {
         
         .navigationTitle("New Reminder")
         .toolbar {
+#if os(iOS)
             ToolbarItem(placement: .automatic) {
                 Button("Save") {
                     store.saveTask(description: description, priority: priority)
@@ -52,6 +53,20 @@ struct AddTask: View {
                     showing = false
                 }
             }
+#else
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Save") {
+                    store.saveTask(description: description, priority: priority)
+                    showing = false
+                }
+                .disabled(description.isEmpty)
+            }
+            ToolbarItem(placement: .automatic) {
+                Button("Cancel") {
+                    showing = false
+                }
+            }
+#endif
         }
         .interactiveDismissDisabled()
     }
