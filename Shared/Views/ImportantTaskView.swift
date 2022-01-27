@@ -34,6 +34,7 @@ struct ImportantTaskView: View {
         }
         .navigationTitle("Important")
         .toolbar {
+#if os(iOS)
             ToolbarItem(placement: .primaryAction) {
                 Button {
                     showingCompletedTasks.toggle()
@@ -41,7 +42,6 @@ struct ImportantTaskView: View {
                     Image(systemName: "line.3.horizontal.circle")
                 }
             }
-#if os(iOS)
             ToolbarItem(placement: .navigationBarLeading) {
                 EditButton()
             }
