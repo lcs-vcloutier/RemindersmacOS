@@ -22,18 +22,22 @@ struct ContentView: View {
                 if showingCompletedTasks {
                     if selectedPriorityForVisibleTasks == .all {
                         TaskCell(task: task, selectedTask: $selectedTask, showingEditTask: $showingEditTask, triggerListUpdate: .constant(true))
+                            .deleteMenuItem(store: store, task: task)
                     } else {
                         if task.priority.rawValue == selectedPriorityForVisibleTasks.rawValue {
                             TaskCell(task: task, selectedTask: $selectedTask, showingEditTask: $showingEditTask, triggerListUpdate: .constant(true))
+                                .deleteMenuItem(store: store, task: task)
                         }
                     }
                 } else {
                     if !task.completed {
                         if selectedPriorityForVisibleTasks == .all {
                             TaskCell(task: task, selectedTask: $selectedTask, showingEditTask: $showingEditTask, triggerListUpdate: .constant(true))
+                                .deleteMenuItem(store: store, task: task)
                         } else {
                             if task.priority.rawValue == selectedPriorityForVisibleTasks.rawValue {
                                 TaskCell(task: task, selectedTask: $selectedTask, showingEditTask: $showingEditTask, triggerListUpdate: .constant(true))
+                                    .deleteMenuItem(store: store, task: task)
                             }
                         }
                     }

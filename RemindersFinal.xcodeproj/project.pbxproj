@@ -31,6 +31,8 @@
 		923C1E9027A30A0B00DAF174 /* ImportantTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8627A30A0B00DAF174 /* ImportantTaskView.swift */; };
 		923C1E9127A30A0B00DAF174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8727A30A0B00DAF174 /* ContentView.swift */; };
 		923C1E9227A30A0B00DAF174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8727A30A0B00DAF174 /* ContentView.swift */; };
+		923C1E9727A31C9000DAF174 /* DeleteMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E9627A31C9000DAF174 /* DeleteMenuItem.swift */; };
+		923C1E9827A31C9000DAF174 /* DeleteMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E9627A31C9000DAF174 /* DeleteMenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,7 @@
 		923C1E8527A30A0B00DAF174 /* AddTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 		923C1E8627A30A0B00DAF174 /* ImportantTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportantTaskView.swift; sourceTree = "<group>"; };
 		923C1E8727A30A0B00DAF174 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		923C1E9627A31C9000DAF174 /* DeleteMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 				923C1E5227A3099500DAF174 /* RemindersFinalApp.swift */,
 				923C1E7027A309EB00DAF174 /* Helpers */,
 				923C1E7427A309EF00DAF174 /* Model */,
+				923C1E9527A31C7900DAF174 /* ViewModifiers */,
 				923C1E8227A30A0B00DAF174 /* Views */,
 				923C1E7E27A309F500DAF174 /* ViewModel */,
 				923C1E5427A3099600DAF174 /* Assets.xcassets */,
@@ -144,6 +148,14 @@
 				923C1E8727A30A0B00DAF174 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		923C1E9527A31C7900DAF174 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				923C1E9627A31C9000DAF174 /* DeleteMenuItem.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +258,7 @@
 			files = (
 				923C1E8F27A30A0B00DAF174 /* ImportantTaskView.swift in Sources */,
 				923C1E9127A30A0B00DAF174 /* ContentView.swift in Sources */,
+				923C1E9727A31C9000DAF174 /* DeleteMenuItem.swift in Sources */,
 				923C1E7227A309EB00DAF174 /* SharedFunctionsAndConstants.swift in Sources */,
 				923C1E7827A309EF00DAF174 /* VisibleTaskPriority.swift in Sources */,
 				923C1E8D27A30A0B00DAF174 /* AddTask.swift in Sources */,
@@ -264,6 +277,7 @@
 			files = (
 				923C1E9027A30A0B00DAF174 /* ImportantTaskView.swift in Sources */,
 				923C1E9227A30A0B00DAF174 /* ContentView.swift in Sources */,
+				923C1E9827A31C9000DAF174 /* DeleteMenuItem.swift in Sources */,
 				923C1E7327A309EB00DAF174 /* SharedFunctionsAndConstants.swift in Sources */,
 				923C1E7927A309EF00DAF174 /* VisibleTaskPriority.swift in Sources */,
 				923C1E8E27A30A0B00DAF174 /* AddTask.swift in Sources */,
