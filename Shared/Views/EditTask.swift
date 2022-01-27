@@ -41,9 +41,9 @@ struct EditTask: View {
         
         .navigationTitle("New Reminder")
         .toolbar {
+#if os(iOS)
             ToolbarItem(placement: .automatic) {
                 Button("Save") {
-                    store.delete(task)
                     store.saveTask(description: description, priority: priority)
                     showing = false
                 }
@@ -54,6 +54,20 @@ struct EditTask: View {
                     showing = false
                 }
             }
+#else
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Save") {
+                    store.saveTask(description: description, priority: priority)
+                    showing = false
+                }
+                .disabled(description.isEmpty)
+            }
+            ToolbarItem(placement: .automatic) {
+                Button("Cancel") {
+                    showing = false
+                }
+            }
+#endif
         }
         .interactiveDismissDisabled()
         .task {
