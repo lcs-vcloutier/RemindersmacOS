@@ -67,9 +67,11 @@ struct ContentView: View {
                     Image(systemName: "line.3.horizontal.circle")
                 }
             }
+#if os(iOS)
             ToolbarItem(placement: .navigationBarLeading) {
                 EditButton()
             }
+#endif
         }
         .sheet(isPresented: $showingAddTask) {
             AddTask(store: store, showing: $showingAddTask)
