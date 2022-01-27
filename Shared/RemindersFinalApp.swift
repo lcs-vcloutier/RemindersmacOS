@@ -14,7 +14,7 @@ struct RemindersApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                #if os(iOS)
+#if os(iOS)
                 NavigationView {ContentView(store: store)}
                 .tabItem {
                     Label("List", systemImage: "list.bullet.circle.fill")
@@ -23,7 +23,7 @@ struct RemindersApp: App {
                 .tabItem {
                     Label("Important", systemImage: "exclamationmark.circle.fill")
                 }
-                #else
+#else
                 ContentView(store: store)
                     .frame(minWidth: 475, idealWidth: 525, maxWidth: 575, minHeight: 200, idealHeight: 300)
                     .tabItem {
@@ -33,8 +33,8 @@ struct RemindersApp: App {
                     .tabItem {
                         Label("Important", systemImage: "exclamationmark.circle.fill")
                     }
-                #endif
-             
+#endif
+                
             }
         }
         .onChange(of: scenePhase) { newPhase in
@@ -47,5 +47,19 @@ struct RemindersApp: App {
                 store.persistTasks()
             }
         }
+#if os(macOS)
+        .commands {
+            CommandGroup(replacing: .appTermination) {
+                Button(action: {
+                    store.persistTasks()
+                    // close app
+                    exit(0)
+                }, label: {
+                    Text("Quit Reminders")
+                })
+                    .keyboardShortcut("Q", modifiers: [.command])
+            }
+        }
+#endif
     }
 }
