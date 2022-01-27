@@ -74,7 +74,13 @@ struct ContentView: View {
 #endif
         }
         .sheet(isPresented: $showingAddTask) {
+#if os(iOS)
+            NavigationView {
+                AddTask(store: store, showing: $showingAddTask)
+            }
+#else
             AddTask(store: store, showing: $showingAddTask)
+#endif
         }
         .sheet(isPresented: $showingEditTask) {
             EditTask(store: store, task: selectedTask, showing: $showingEditTask)
