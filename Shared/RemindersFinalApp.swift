@@ -8,10 +8,31 @@
 import SwiftUI
 
 @main
-struct RemindersFinalApp: App {
+struct RemindersApp: App {
+    @Environment(\.scenePhase) var scenePhase
+    @StateObject private var store = TaskStore(tasks: testData)
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                NavigationView {ContentView(store: store)}
+                .tabItem {
+                    Label("List", systemImage: "list.bullet.circle.fill")
+                }
+                NavigationView {ImportantTaskView(store: store)}
+                .tabItem {
+                    Label("Important", systemImage: "exclamationmark.circle.fill")
+                }
+            }
+        }
+        .onChange(of: scenePhase) { newPhase in
+            if newPhase == .inactive {
+                print("Inactive")
+            } else if newPhase == .active {
+                print("Active")
+            } else if newPhase == .background {
+                print("Backgrounded")
+                store.persistTasks()
+            }
         }
     }
 }

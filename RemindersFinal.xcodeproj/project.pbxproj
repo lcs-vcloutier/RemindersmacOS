@@ -9,19 +9,46 @@
 /* Begin PBXBuildFile section */
 		923C1E6227A3099600DAF174 /* RemindersFinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E5227A3099500DAF174 /* RemindersFinalApp.swift */; };
 		923C1E6327A3099600DAF174 /* RemindersFinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E5227A3099500DAF174 /* RemindersFinalApp.swift */; };
-		923C1E6427A3099600DAF174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E5327A3099500DAF174 /* ContentView.swift */; };
-		923C1E6527A3099600DAF174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E5327A3099500DAF174 /* ContentView.swift */; };
 		923C1E6627A3099600DAF174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923C1E5427A3099600DAF174 /* Assets.xcassets */; };
 		923C1E6727A3099600DAF174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923C1E5427A3099600DAF174 /* Assets.xcassets */; };
+		923C1E7227A309EB00DAF174 /* SharedFunctionsAndConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7127A309EB00DAF174 /* SharedFunctionsAndConstants.swift */; };
+		923C1E7327A309EB00DAF174 /* SharedFunctionsAndConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7127A309EB00DAF174 /* SharedFunctionsAndConstants.swift */; };
+		923C1E7827A309EF00DAF174 /* VisibleTaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7527A309EF00DAF174 /* VisibleTaskPriority.swift */; };
+		923C1E7927A309EF00DAF174 /* VisibleTaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7527A309EF00DAF174 /* VisibleTaskPriority.swift */; };
+		923C1E7A27A309EF00DAF174 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7627A309EF00DAF174 /* TaskPriority.swift */; };
+		923C1E7B27A309EF00DAF174 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7627A309EF00DAF174 /* TaskPriority.swift */; };
+		923C1E7C27A309EF00DAF174 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7727A309EF00DAF174 /* Task.swift */; };
+		923C1E7D27A309EF00DAF174 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7727A309EF00DAF174 /* Task.swift */; };
+		923C1E8027A309F500DAF174 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7F27A309F500DAF174 /* TaskStore.swift */; };
+		923C1E8127A309F500DAF174 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E7F27A309F500DAF174 /* TaskStore.swift */; };
+		923C1E8927A30A0B00DAF174 /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8327A30A0B00DAF174 /* EditTask.swift */; };
+		923C1E8A27A30A0B00DAF174 /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8327A30A0B00DAF174 /* EditTask.swift */; };
+		923C1E8B27A30A0B00DAF174 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8427A30A0B00DAF174 /* TaskCell.swift */; };
+		923C1E8C27A30A0B00DAF174 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8427A30A0B00DAF174 /* TaskCell.swift */; };
+		923C1E8D27A30A0B00DAF174 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8527A30A0B00DAF174 /* AddTask.swift */; };
+		923C1E8E27A30A0B00DAF174 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8527A30A0B00DAF174 /* AddTask.swift */; };
+		923C1E8F27A30A0B00DAF174 /* ImportantTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8627A30A0B00DAF174 /* ImportantTaskView.swift */; };
+		923C1E9027A30A0B00DAF174 /* ImportantTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8627A30A0B00DAF174 /* ImportantTaskView.swift */; };
+		923C1E9127A30A0B00DAF174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8727A30A0B00DAF174 /* ContentView.swift */; };
+		923C1E9227A30A0B00DAF174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C1E8727A30A0B00DAF174 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		923C1E5227A3099500DAF174 /* RemindersFinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersFinalApp.swift; sourceTree = "<group>"; };
-		923C1E5327A3099500DAF174 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		923C1E5427A3099600DAF174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923C1E5927A3099600DAF174 /* RemindersFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindersFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		923C1E5F27A3099600DAF174 /* RemindersFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindersFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		923C1E6127A3099600DAF174 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		923C1E7127A309EB00DAF174 /* SharedFunctionsAndConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFunctionsAndConstants.swift; sourceTree = "<group>"; };
+		923C1E7527A309EF00DAF174 /* VisibleTaskPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleTaskPriority.swift; sourceTree = "<group>"; };
+		923C1E7627A309EF00DAF174 /* TaskPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPriority.swift; sourceTree = "<group>"; };
+		923C1E7727A309EF00DAF174 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		923C1E7F27A309F500DAF174 /* TaskStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		923C1E8327A30A0B00DAF174 /* EditTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
+		923C1E8427A30A0B00DAF174 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		923C1E8527A30A0B00DAF174 /* AddTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
+		923C1E8627A30A0B00DAF174 /* ImportantTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportantTaskView.swift; sourceTree = "<group>"; };
+		923C1E8727A30A0B00DAF174 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				923C1E5227A3099500DAF174 /* RemindersFinalApp.swift */,
-				923C1E5327A3099500DAF174 /* ContentView.swift */,
+				923C1E7027A309EB00DAF174 /* Helpers */,
+				923C1E7427A309EF00DAF174 /* Model */,
+				923C1E8227A30A0B00DAF174 /* Views */,
+				923C1E7E27A309F500DAF174 /* ViewModel */,
 				923C1E5427A3099600DAF174 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +106,44 @@
 				923C1E6127A3099600DAF174 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		923C1E7027A309EB00DAF174 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				923C1E7127A309EB00DAF174 /* SharedFunctionsAndConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		923C1E7427A309EF00DAF174 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				923C1E7527A309EF00DAF174 /* VisibleTaskPriority.swift */,
+				923C1E7627A309EF00DAF174 /* TaskPriority.swift */,
+				923C1E7727A309EF00DAF174 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		923C1E7E27A309F500DAF174 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				923C1E7F27A309F500DAF174 /* TaskStore.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		923C1E8227A30A0B00DAF174 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				923C1E8327A30A0B00DAF174 /* EditTask.swift */,
+				923C1E8427A30A0B00DAF174 /* TaskCell.swift */,
+				923C1E8527A30A0B00DAF174 /* AddTask.swift */,
+				923C1E8627A30A0B00DAF174 /* ImportantTaskView.swift */,
+				923C1E8727A30A0B00DAF174 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +244,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				923C1E6427A3099600DAF174 /* ContentView.swift in Sources */,
+				923C1E8F27A30A0B00DAF174 /* ImportantTaskView.swift in Sources */,
+				923C1E9127A30A0B00DAF174 /* ContentView.swift in Sources */,
+				923C1E7227A309EB00DAF174 /* SharedFunctionsAndConstants.swift in Sources */,
+				923C1E7827A309EF00DAF174 /* VisibleTaskPriority.swift in Sources */,
+				923C1E8D27A30A0B00DAF174 /* AddTask.swift in Sources */,
+				923C1E8027A309F500DAF174 /* TaskStore.swift in Sources */,
+				923C1E8927A30A0B00DAF174 /* EditTask.swift in Sources */,
+				923C1E8B27A30A0B00DAF174 /* TaskCell.swift in Sources */,
+				923C1E7C27A309EF00DAF174 /* Task.swift in Sources */,
+				923C1E7A27A309EF00DAF174 /* TaskPriority.swift in Sources */,
 				923C1E6227A3099600DAF174 /* RemindersFinalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				923C1E6527A3099600DAF174 /* ContentView.swift in Sources */,
+				923C1E9027A30A0B00DAF174 /* ImportantTaskView.swift in Sources */,
+				923C1E9227A30A0B00DAF174 /* ContentView.swift in Sources */,
+				923C1E7327A309EB00DAF174 /* SharedFunctionsAndConstants.swift in Sources */,
+				923C1E7927A309EF00DAF174 /* VisibleTaskPriority.swift in Sources */,
+				923C1E8E27A30A0B00DAF174 /* AddTask.swift in Sources */,
+				923C1E8127A309F500DAF174 /* TaskStore.swift in Sources */,
+				923C1E8A27A30A0B00DAF174 /* EditTask.swift in Sources */,
+				923C1E8C27A30A0B00DAF174 /* TaskCell.swift in Sources */,
+				923C1E7D27A309EF00DAF174 /* Task.swift in Sources */,
+				923C1E7B27A309EF00DAF174 /* TaskPriority.swift in Sources */,
 				923C1E6327A3099600DAF174 /* RemindersFinalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
